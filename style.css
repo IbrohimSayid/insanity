@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+    color: #EF4467;
+}
+
+section {
+    background-color: #fccdc4;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.section-container {
+    padding: 40px 0px;
+    text-align: center;
+}
+
+.section-img-home {
+    margin: 40px 0px;
+    position: relative;
+}
+
+.section-img-home img:nth-child(1) {
+    width: 250px;
+    height: 270px;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 50px;
+}
+
+
+.animation {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px 0px;
+}
+
+.animate:nth-child(1) {
+    animation: riseAndFall 2.2s infinite ease-in-out;
+}
+
+.animate:nth-child(2) {
+    animation: riseAndFall 2.4s infinite ease-in-out;
+}
+
+.animate:nth-child(3) {
+    animation: riseAndFall 2.8s infinite ease-in-out;
+}
+
+.animate:nth-child(4) {
+    animation: riseAndFall 2.7s infinite ease-in-out;
+}
+
+@keyframes riseAndFall {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-30px);
+    }
+}
